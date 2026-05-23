@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Portal — Sozo Behavioral Health Services</title>
+  <meta name="description" content="Sign in to your Sozo patient portal to view upcoming appointments, evaluation reports, secure messages, and billing." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-stone-200 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-semibold text-stone-900 shrink-0">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-sky-700 text-white font-bold">S</span>
+        <span class="hidden sm:inline tracking-tight">Sozo Behavioral Health</span>
+        <span class="sm:hidden tracking-tight">Sozo</span>
+      </a>
+      <nav class="flex items-center gap-3 sm:gap-6 text-sm font-medium overflow-x-auto">
+        <a href="/" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">Home</a>
+        <a href="/services.html" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">Evaluations</a>
+        <a href="/about.html" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">About</a>
+        <a href="/contact.html" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">Contact</a>
+        <a href="/portal.html" class="text-sky-700 font-semibold whitespace-nowrap">Sign in</a>
+      </nav>
+      <a href="/book.html" class="inline-flex items-center px-4 py-2 rounded-lg bg-sky-700 text-white text-sm font-semibold hover:bg-sky-800 transition shrink-0">
+        Book now
+      </a>
+    </div>
+  </header>
+
+  <!-- Demo notice -->
+  <div class="bg-amber-50 border-b border-amber-200">
+    <div class="max-w-6xl mx-auto px-6 py-3 text-sm text-amber-900 text-center">
+      <strong>Portal preview.</strong> Full patient portal is coming soon — to start your evaluation today, call
+      <a href="tel:+18889856037" class="font-semibold underline hover:no-underline">1-888-985-6037</a>.
+    </div>
+  </div>
+
+  <!-- Sign in -->
+  <section class="px-6 py-12 sm:py-20 bg-gradient-to-br from-sky-50 via-stone-50 to-emerald-50">
+    <div class="max-w-md mx-auto">
+      <div class="text-center">
+        <p class="text-sm uppercase tracking-widest text-sky-700 font-semibold">Patient Portal</p>
+        <h1 class="mt-3 text-3xl sm:text-4xl font-semibold text-stone-900 tracking-tight">
+          Welcome back.
+        </h1>
+        <p class="mt-3 text-stone-600">Sign in to view appointments, reports, and messages.</p>
+      </div>
+
+      <form action="#preview-dashboard" method="get" class="mt-10 rounded-2xl bg-white border border-stone-200 p-7 shadow-sm">
+        <div>
+          <label for="portal-email" class="text-sm font-semibold text-stone-700">Email</label>
+          <input id="portal-email" type="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="you@example.com" />
+        </div>
+        <div class="mt-5">
+          <div class="flex items-center justify-between">
+            <label for="portal-password" class="text-sm font-semibold text-stone-700">Password</label>
+            <a href="#" class="text-sm text-sky-700 hover:underline">Forgot?</a>
+          </div>
+          <input id="portal-password" type="password" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="••••••••" />
+        </div>
+        <label class="mt-5 flex items-center gap-2 text-sm text-stone-700 cursor-pointer">
+          <input type="checkbox" class="text-sky-700" />
+          Keep me signed in on this device
+        </label>
+        <button type="submit" class="mt-6 w-full inline-flex items-center justify-center px-6 py-3 rounded-lg bg-sky-700 text-white font-semibold hover:bg-sky-800 transition">
+          Sign in
+        </button>
+        <p class="mt-5 text-sm text-stone-600 text-center">
+          New to Sozo? <a href="/book.html" class="text-sky-700 font-semibold hover:underline">Book your first evaluation →</a>
+        </p>
+      </form>
+
+      <p class="mt-6 text-xs text-stone-500 text-center max-w-sm mx-auto">
+        Your portal is protected with the same standards used across U.S. healthcare.
+        We never sell your data.
+      </p>
+    </div>
+  </section>
+
+  <!-- What's inside the portal (preview) -->
+  <section id="preview-dashboard" class="px-6 py-16 sm:py-20 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <p class="text-sm uppercase tracking-widest text-sky-700 font-semibold text-center">What's inside</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-stone-900 text-center tracking-tight">
+        Everything in one place — Sozo's portal at a glance.
+      </h2>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Upcoming appointments -->
+        <div class="rounded-2xl bg-white border border-stone-200 p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </span>
+            <h3 class="font-semibold text-stone-900">Upcoming appointments</h3>
+          </div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="rounded-lg bg-sky-50 border border-sky-100 p-3">
+              <p class="font-semibold text-stone-900">ADHD intake — Sofia</p>
+              <p class="text-stone-600">Wed, May 27 · 10:30 AM · Telehealth</p>
+            </li>
+            <li class="rounded-lg border border-stone-200 p-3">
+              <p class="font-semibold text-stone-900">ADHD feedback — Sofia</p>
+              <p class="text-stone-600">Fri, Jun 5 · 4:00 PM · Telehealth</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Evaluation reports -->
+        <div class="rounded-2xl bg-white border border-stone-200 p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </span>
+            <h3 class="font-semibold text-stone-900">Evaluation reports</h3>
+          </div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="rounded-lg border border-stone-200 p-3">
+              <p class="font-semibold text-stone-900">Gifted Eval — Diego.pdf</p>
+              <p class="text-stone-600">Issued Mar 14, 2026 · 24 pages</p>
+            </li>
+            <li class="rounded-lg border border-dashed border-stone-300 p-3 text-stone-500 italic">
+              Sofia's ADHD report will appear here after the feedback session.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Messages -->
+        <div class="rounded-2xl bg-white border border-stone-200 p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3.4L12 20z"/></svg>
+            </span>
+            <h3 class="font-semibold text-stone-900">Secure messages</h3>
+          </div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="rounded-lg bg-sky-50 border border-sky-100 p-3">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold text-stone-900">Dr. Ramos · Sozo</p>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-sky-700 text-white font-semibold">New</span>
+              </div>
+              <p class="mt-1 text-stone-600">"Sending you the teacher rating form for Sofia — easiest to..."</p>
+            </li>
+            <li class="rounded-lg border border-stone-200 p-3">
+              <p class="font-semibold text-stone-900">Billing · Sozo</p>
+              <p class="mt-1 text-stone-600">"Your insurance benefits have been verified..."</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Billing -->
+        <div class="rounded-2xl bg-white border border-stone-200 p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </span>
+            <h3 class="font-semibold text-stone-900">Billing &amp; insurance</h3>
+          </div>
+          <div class="mt-5 space-y-3 text-sm">
+            <div class="rounded-lg bg-emerald-50 border border-emerald-200 p-3">
+              <p class="font-semibold text-emerald-900">Insurance verified</p>
+              <p class="text-emerald-800">Florida Blue PPO · est. patient cost $0–$45</p>
+            </div>
+            <p class="text-stone-600">No outstanding balances.</p>
+          </div>
+        </div>
+
+        <!-- Family profiles -->
+        <div class="rounded-2xl bg-white border border-stone-200 p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-3a4 4 0 11-8 0 4 4 0 018 0zm6-3a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </span>
+            <h3 class="font-semibold text-stone-900">Family profiles</h3>
+          </div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="flex items-center gap-3 rounded-lg border border-stone-200 p-3">
+              <span class="inline-flex w-9 h-9 rounded-full bg-sky-100 text-sky-700 font-semibold items-center justify-center">S</span>
+              <div>
+                <p class="font-semibold text-stone-900">Sofia, 9</p>
+                <p class="text-stone-600 text-xs">ADHD evaluation · in progress</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3 rounded-lg border border-stone-200 p-3">
+              <span class="inline-flex w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 font-semibold items-center justify-center">D</span>
+              <div>
+                <p class="font-semibold text-stone-900">Diego, 12</p>
+                <p class="text-stone-600 text-xs">Gifted eval · completed Mar 2026</p>
+              </div>
+            </li>
+            <li class="text-stone-500 text-sm">+ Add another child</li>
+          </ul>
+        </div>
+
+        <!-- Forms & intake -->
+        <div class="rounded-2xl bg-white border border-stone-200 p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            </span>
+            <h3 class="font-semibold text-stone-900">Intake &amp; consent forms</h3>
+          </div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="flex items-center justify-between rounded-lg bg-emerald-50 border border-emerald-200 p-3">
+              <span class="text-emerald-900">Consent for telehealth</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-700 text-white font-semibold">Signed</span>
+            </li>
+            <li class="flex items-center justify-between rounded-lg bg-amber-50 border border-amber-200 p-3">
+              <span class="text-amber-900">Teacher rating form</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-amber-700 text-white font-semibold">Action needed</span>
+            </li>
+            <li class="flex items-center justify-between rounded-lg border border-stone-200 p-3 text-stone-700">
+              <span>Developmental history</span>
+              <span class="text-xs text-stone-500">Sent Apr 12</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mt-10 text-center text-sm text-stone-500">
+        Live data shown above is illustrative — your portal will only ever show your family's information.
+      </p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="px-6 py-20 sm:py-28 bg-gradient-to-br from-sky-700 to-sky-900 text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
+        Not yet a Sozo family?
+      </h2>
+      <p class="mt-6 text-lg sm:text-xl text-sky-100 leading-relaxed">
+        The portal opens after you complete your first intake. Start with a free
+        15-minute call — we'll set you up.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/book.html" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-sky-800 font-semibold shadow-sm hover:bg-sky-50 transition">
+          Book your evaluation
+        </a>
+        <a href="tel:+18889856037" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-sky-800 text-white font-semibold border border-sky-500 hover:bg-sky-700 transition">
+          Call 1-888-985-6037
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 text-white font-semibold">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-sky-700 text-white font-bold">S</span>
+          <span>Sozo Behavioral Health</span>
+        </div>
+        <p class="mt-4 text-sm text-stone-400 leading-relaxed">
+          Comprehensive evaluations for children, teens, and young adults. Serving all of Florida.
+        </p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white uppercase tracking-widest">Pages</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          <li><a href="/services.html" class="hover:text-white">Evaluations</a></li>
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+          <li><a href="/book.html" class="hover:text-white">Book appointment</a></li>
+          <li><a href="/portal.html" class="hover:text-white">Patient portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white uppercase tracking-widest">Contact</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="tel:+18889856037" class="hover:text-white">1-888-985-6037 (toll-free)</a></li>
+          <li><a href="tel:+13059856037" class="hover:text-white">305-985-6037 (local)</a></li>
+          <li><a href="mailto:info@sozo-llc.com" class="hover:text-white">info@sozo-llc.com</a></li>
+          <li class="text-stone-500">Fax 305-902-2455</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-stone-800">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-stone-500 text-center">
+        &copy; Sozo Behavioral Health Services. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
