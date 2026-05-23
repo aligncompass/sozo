@@ -1,0 +1,17 @@
+/* Sozo Behavioral Health Services — minor overrides; most styling is Tailwind. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
