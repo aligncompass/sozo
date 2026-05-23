@@ -10,42 +10,66 @@
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
+  <!-- Header / Nav -->
+  <header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-stone-200 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-semibold text-stone-900 shrink-0">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-sky-700 text-white font-bold">S</span>
+        <span class="hidden sm:inline tracking-tight">Sozo Behavioral Health</span>
+        <span class="sm:hidden tracking-tight">Sozo</span>
+      </a>
+      <nav class="flex items-center gap-3 sm:gap-6 text-sm font-medium overflow-x-auto">
+        <a href="/" class="text-sky-700 font-semibold whitespace-nowrap">Home</a>
+        <a href="/services.html" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">Evaluations</a>
+        <a href="/about.html" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">About</a>
+        <a href="/contact.html" class="text-stone-700 hover:text-sky-700 transition whitespace-nowrap">Contact</a>
+      </nav>
+      <a href="tel:+18889856037" class="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-sky-700 text-white text-sm font-semibold hover:bg-sky-800 transition shrink-0">
+        Call us
+      </a>
+    </div>
+  </header>
+
   <!-- Hero -->
-  <header class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-sky-50 via-stone-50 to-emerald-50"></div>
-    <div class="relative px-6 py-20 sm:py-28">
-      <div class="max-w-5xl mx-auto text-center">
-        <p class="text-sm uppercase tracking-widest text-sky-700 font-semibold">Sozo Behavioral Health Services</p>
-        <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-stone-900">
+  <section class="relative">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1599135578372-2f257d33b57c?auto=format&fit=crop&w=1800&q=80"
+           alt="A parent holding their child's hand, walking together"
+           class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-br from-sky-900/85 via-sky-800/70 to-stone-900/60"></div>
+    </div>
+    <div class="relative px-6 py-24 sm:py-32 lg:py-40">
+      <div class="max-w-5xl mx-auto text-center text-white">
+        <p class="text-sm uppercase tracking-widest text-sky-200 font-semibold">Sozo Behavioral Health Services</p>
+        <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight">
           Get clear answers about your child —<br class="hidden sm:block" />
-          <span class="text-sky-700">without the months-long waitlist.</span>
+          <span class="text-sky-200">without the months-long waitlist.</span>
         </h1>
-        <p class="mt-6 text-lg sm:text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
+        <p class="mt-6 text-lg sm:text-xl text-sky-100 max-w-3xl mx-auto leading-relaxed">
           Comprehensive ADHD, autism, gifted, and learning evaluations for Florida families.
-          Virtual or in person. Most insurance accepted. Results in weeks, not seasons —
-          with school-ready reports that actually help.
+          Virtual or in person. Most insurance accepted. Results in weeks, not seasons.
         </p>
         <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
           <a href="tel:+18889856037"
-             class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-sky-700 text-white font-semibold shadow-sm hover:bg-sky-800 transition">
+             class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-sky-800 font-semibold shadow-lg hover:bg-sky-50 transition">
             Book your evaluation
           </a>
-          <a href="#contact"
-             class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-sky-800 font-semibold border border-sky-200 hover:border-sky-400 transition">
+          <a href="/contact.html"
+             class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-sky-900/40 text-white font-semibold border border-white/30 hover:bg-sky-900/60 transition backdrop-blur">
             Talk to us first — free 15-min call
           </a>
         </div>
-        <p class="mt-8 text-sm text-stone-500 max-w-3xl mx-auto">
+        <p class="mt-10 text-sm text-sky-200 max-w-3xl mx-auto">
           Licensed clinicians · No waitlist · 7 days a week · Statewide telehealth · Insurance + Step Up for Students accepted
         </p>
       </div>
     </div>
-  </header>
+  </section>
 
   <!-- Problem -->
   <section class="px-6 py-16 sm:py-20 bg-white">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center tracking-tight">
         You shouldn't have to wait a school year for an answer.
       </h2>
       <div class="mt-10 space-y-6 text-lg leading-relaxed text-stone-700">
@@ -66,62 +90,15 @@
     </div>
   </section>
 
-  <!-- Guide -->
-  <section class="px-6 py-16 sm:py-20">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center">
-        We've sat across from hundreds of Florida families on the hardest weeks of their year.
-      </h2>
-      <div class="mt-10 text-lg leading-relaxed text-stone-700 max-w-3xl mx-auto space-y-5">
-        <p>
-          Sozo Behavioral Health Services is a team of licensed psychologists and clinicians
-          who specialize in one thing: delivering complete, school-ready evaluations for kids,
-          teens, and young adults — fast, accurate, and with the warmth your family deserves.
-        </p>
-        <p>
-          We don't make you drive across the state. We don't make you wait months. We don't
-          hand you a long report and disappear. We give you clear answers you can use — Monday
-          morning, with your child's teacher, in your own words.
-        </p>
-      </div>
-
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-        <div class="rounded-xl bg-white border border-stone-200 p-5">
-          <p class="font-semibold text-stone-900">Licensed Florida psychologists</p>
-          <p class="mt-1 text-sm text-stone-600">Specialists in child & adolescent assessment.</p>
-        </div>
-        <div class="rounded-xl bg-white border border-stone-200 p-5">
-          <p class="font-semibold text-stone-900">Statewide telehealth</p>
-          <p class="mt-1 text-sm text-stone-600">All 67 Florida counties — from the Panhandle to Key West.</p>
-        </div>
-        <div class="rounded-xl bg-white border border-stone-200 p-5">
-          <p class="font-semibold text-stone-900">Step Up for Students provider</p>
-          <p class="mt-1 text-sm text-stone-600">Scholarship-funded evaluations welcome.</p>
-        </div>
-        <div class="rounded-xl bg-white border border-stone-200 p-5">
-          <p class="font-semibold text-stone-900">In-network with major plans</p>
-          <p class="mt-1 text-sm text-stone-600">Most major Florida insurance accepted.</p>
-        </div>
-        <div class="rounded-xl bg-white border border-stone-200 p-5">
-          <p class="font-semibold text-stone-900">Bilingual support</p>
-          <p class="mt-1 text-sm text-stone-600">English &amp; Spanish clinicians available.</p>
-        </div>
-        <div class="rounded-xl bg-white border border-stone-200 p-5">
-          <p class="font-semibold text-stone-900">7 days a week</p>
-          <p class="mt-1 text-sm text-stone-600">Evenings and weekends — because life doesn't pause.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Plan -->
   <section class="px-6 py-16 sm:py-20 bg-stone-100">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center">
+      <p class="text-sm uppercase tracking-widest text-sky-700 font-semibold text-center">Our process</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-stone-900 text-center tracking-tight">
         Three simple steps to clarity.
       </h2>
       <div class="mt-12 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl bg-white p-7 shadow-sm">
+        <div class="rounded-2xl bg-white p-7 shadow-sm border border-stone-100">
           <div class="w-10 h-10 rounded-full bg-sky-700 text-white flex items-center justify-center font-semibold">1</div>
           <h3 class="mt-5 text-xl font-semibold text-stone-900">Book a free 15-minute call</h3>
           <p class="mt-3 text-stone-600 leading-relaxed">
@@ -129,7 +106,7 @@
             and tell you what insurance will cover.
           </p>
         </div>
-        <div class="rounded-2xl bg-white p-7 shadow-sm">
+        <div class="rounded-2xl bg-white p-7 shadow-sm border border-stone-100">
           <div class="w-10 h-10 rounded-full bg-sky-700 text-white flex items-center justify-center font-semibold">2</div>
           <h3 class="mt-5 text-xl font-semibold text-stone-900">Complete the evaluation</h3>
           <p class="mt-3 text-stone-600 leading-relaxed">
@@ -137,7 +114,7 @@
             We handle all the paperwork.
           </p>
         </div>
-        <div class="rounded-2xl bg-white p-7 shadow-sm">
+        <div class="rounded-2xl bg-white p-7 shadow-sm border border-stone-100">
           <div class="w-10 h-10 rounded-full bg-sky-700 text-white flex items-center justify-center font-semibold">3</div>
           <h3 class="mt-5 text-xl font-semibold text-stone-900">Walk away with answers</h3>
           <p class="mt-3 text-stone-600 leading-relaxed">
@@ -147,234 +124,129 @@
         </div>
       </div>
       <div class="mt-10 text-center">
-        <a href="tel:+18889856037" class="inline-flex items-center text-sky-800 font-semibold hover:underline">
+        <a href="/contact.html" class="inline-flex items-center text-sky-800 font-semibold hover:underline">
           Start with a free 15-min call →
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="px-6 py-16 sm:py-20 bg-white">
+  <!-- Services teaser -->
+  <section class="px-6 py-16 sm:py-20 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center">
-        Evaluations designed for real answers — and real next steps.
+      <p class="text-sm uppercase tracking-widest text-sky-700 font-semibold text-center">Evaluations</p>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-stone-900 text-center tracking-tight">
+        Built for real answers — and real next steps.
       </h2>
       <p class="mt-4 text-lg text-stone-600 text-center max-w-2xl mx-auto">
-        Each evaluation is school-ready, parent-friendly, and built to be used —
+        Every evaluation is school-ready, parent-friendly, and built to be used —
         not filed away.
       </p>
 
-      <div class="mt-14 grid md:grid-cols-2 gap-6">
-        <!-- Card 1 -->
-        <article class="rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition">
-          <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">ADHD Evaluation</p>
-          <h3 class="mt-2 text-2xl font-semibold text-stone-900">
+      <div class="mt-12 grid md:grid-cols-2 gap-6">
+        <a href="/services.html#adhd" class="group rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition block">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </span>
+            <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">ADHD Evaluation</p>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-stone-900">
             Is it ADHD? Get a real answer in just two sessions.
           </h3>
-          <ul class="mt-5 space-y-2 text-stone-700">
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> 60-minute parent intake</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Multi-rater behavior measures (parent + teacher)</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Objective attention testing</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> 45-minute feedback session</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Written report with IEP / 504 language</li>
-          </ul>
-          <p class="mt-5 text-sm text-stone-500">
-            Virtual or in person · Most insurance accepted · Step Up accepted · Payment plans available
+          <p class="mt-2 text-stone-600">
+            Multi-rater behavior measures, objective attention testing, and an IEP/504-ready report.
           </p>
-        </article>
+          <p class="mt-4 text-sm text-sky-700 font-semibold group-hover:underline">See what's included →</p>
+        </a>
 
-        <!-- Card 2 -->
-        <article class="rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition">
-          <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">Autism Evaluation</p>
-          <h3 class="mt-2 text-2xl font-semibold text-stone-900">
+        <a href="/services.html#autism" class="group rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition block">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"/></svg>
+            </span>
+            <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">Autism Evaluation</p>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-stone-900">
             A trusted autism diagnosis — without months of waiting.
           </h3>
-          <ul class="mt-5 space-y-2 text-stone-700">
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> ADOS-2 administered by trained clinicians</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Co-occurring conditions screened</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> DSM-5-TR aligned report</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> School-ready documentation + therapy referrals</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Parent feedback session</li>
-          </ul>
-          <p class="mt-5 text-sm text-stone-500">
-            Virtual + in-person · Most insurance accepted · Statewide
+          <p class="mt-2 text-stone-600">
+            ADOS-2 with trained clinicians, co-occurring conditions screened, DSM-5-TR aligned report.
           </p>
-        </article>
+          <p class="mt-4 text-sm text-sky-700 font-semibold group-hover:underline">See what's included →</p>
+        </a>
 
-        <!-- Card 3 -->
-        <article class="rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition">
-          <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">Gifted &amp; IQ Testing</p>
-          <h3 class="mt-2 text-2xl font-semibold text-stone-900">
-            Discover if your child qualifies for gifted programs — with the official letter to make it happen.
+        <a href="/services.html#gifted" class="group rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition block">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.32.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.32-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+            </span>
+            <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">Gifted &amp; IQ Testing</p>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-stone-900">
+            Discover if your child qualifies for gifted programs.
           </h3>
-          <ul class="mt-5 space-y-2 text-stone-700">
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> WISC-V or WPPSI-IV by a licensed psychologist</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> District-acceptable score report</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Recommendations for gifted placement</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Parent feedback session</li>
-          </ul>
-          <p class="mt-5 text-sm text-stone-500">
-            Often completed in a single session
+          <p class="mt-2 text-stone-600">
+            WISC-V or WPPSI-IV with a licensed psychologist · district-acceptable score reports.
           </p>
-        </article>
+          <p class="mt-4 text-sm text-sky-700 font-semibold group-hover:underline">See what's included →</p>
+        </a>
 
-        <!-- Card 4 -->
-        <article class="rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition">
-          <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">Learning &amp; Achievement Testing</p>
-          <h3 class="mt-2 text-2xl font-semibold text-stone-900">
-            Pinpoint exactly where the learning gap is — and the roadmap to close it.
+        <a href="/services.html#learning" class="group rounded-2xl border border-stone-200 p-7 hover:border-sky-300 hover:shadow-md transition block">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-sky-50 text-sky-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+            </span>
+            <p class="text-xs uppercase tracking-widest text-sky-700 font-semibold">Learning &amp; Achievement Testing</p>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-stone-900">
+            Pinpoint exactly where the learning gap is.
           </h3>
-          <ul class="mt-5 space-y-2 text-stone-700">
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Reading, math, written expression, and processing assessments</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Dyslexia / dyscalculia / dysgraphia screening</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Specific Learning Disability identification</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> 504 / IEP accommodation language</li>
-            <li class="flex gap-2"><span class="text-sky-700">✓</span> Parent feedback session</li>
-          </ul>
-          <p class="mt-5 text-sm text-stone-500">
-            Pairs perfectly with IQ testing for a full psychoeducational profile
+          <p class="mt-2 text-stone-600">
+            Dyslexia, dyscalculia, dysgraphia screening with clear 504/IEP accommodation language.
           </p>
-        </article>
+          <p class="mt-4 text-sm text-sky-700 font-semibold group-hover:underline">See what's included →</p>
+        </a>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="/services.html" class="inline-flex items-center px-7 py-3 rounded-lg border-2 border-sky-700 text-sky-700 font-semibold hover:bg-sky-50 transition">
+          See all evaluations →
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Why Sozo -->
+  <!-- Why Sozo (condensed) -->
   <section class="px-6 py-16 sm:py-20 bg-sky-50">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center tracking-tight">
         Why families across Florida choose Sozo.
       </h2>
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="mt-12 grid sm:grid-cols-3 gap-5">
         <div class="bg-white rounded-xl p-6 border border-sky-100">
           <p class="font-semibold text-stone-900">No waitlist</p>
           <p class="mt-1 text-stone-600">First appointment within 1–2 weeks.</p>
         </div>
         <div class="bg-white rounded-xl p-6 border border-sky-100">
-          <p class="font-semibold text-stone-900">7 days a week</p>
-          <p class="mt-1 text-stone-600">Evenings and weekends — because life doesn't pause.</p>
-        </div>
-        <div class="bg-white rounded-xl p-6 border border-sky-100">
           <p class="font-semibold text-stone-900">Statewide telehealth</p>
-          <p class="mt-1 text-stone-600">From the Panhandle to Key West. In-person options too.</p>
+          <p class="mt-1 text-stone-600">All 67 Florida counties. In-person options too.</p>
         </div>
         <div class="bg-white rounded-xl p-6 border border-sky-100">
           <p class="font-semibold text-stone-900">Insurance handled for you</p>
-          <p class="mt-1 text-stone-600">We verify and bill directly. Most major Florida plans accepted.</p>
+          <p class="mt-1 text-stone-600">We verify and bill directly. Step Up accepted.</p>
         </div>
-        <div class="bg-white rounded-xl p-6 border border-sky-100">
-          <p class="font-semibold text-stone-900">Step Up for Students approved</p>
-          <p class="mt-1 text-stone-600">Scholarship-funded evaluations welcome.</p>
-        </div>
-        <div class="bg-white rounded-xl p-6 border border-sky-100">
-          <p class="font-semibold text-stone-900">Reports schools actually use</p>
-          <p class="mt-1 text-stone-600">Written in the language IEP / 504 teams expect.</p>
-        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/about.html" class="text-sky-800 font-semibold hover:underline">
+          More about Sozo →
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- The Sozo Promise -->
-  <section class="px-6 py-16 sm:py-20 bg-white">
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="text-sm uppercase tracking-widest text-emerald-700 font-semibold">Our Promise</p>
-      <h2 class="mt-3 text-3xl sm:text-4xl font-semibold text-stone-900">
-        If we're not the right fit, we'll tell you — honestly.
-      </h2>
-      <p class="mt-6 text-lg leading-relaxed text-stone-700">
-        After your free 15-minute call, if Sozo isn't the right fit for your family,
-        we'll connect you with a clinician or program who is. At no cost. No pressure.
-        No wasted time.
-      </p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="px-6 py-16 sm:py-20 bg-stone-50">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-stone-900 text-center">
-        Frequently asked questions.
-      </h2>
-      <div class="mt-10 space-y-4">
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>Do you take my insurance?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            We partner with new insurers regularly. Call us at
-            <a href="tel:+18889856037" class="text-sky-700 hover:underline">1-888-985-6037</a>
-            and we'll verify your benefits in minutes.
-          </p>
-        </details>
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>How fast can we start?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            Most families start within 1–2 weeks. No waitlist. Appointments available
-            7 days a week, including evenings and weekends.
-          </p>
-        </details>
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>How many sessions does it take?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            Most evaluations are complete in 1–3 sessions, including the feedback
-            session where we walk you through results and recommendations.
-          </p>
-        </details>
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>Will my child's school accept the report?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            Yes. Our reports are written in the exact language IEP and 504 teams
-            expect, with accommodation recommendations spelled out clearly.
-          </p>
-        </details>
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>Telehealth — really, for kids?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            Yes, with validated protocols. On the intake call we'll recommend the
-            best format for your child — and offer in-person if telehealth isn't a fit.
-          </p>
-        </details>
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>What does it cost?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            It depends on the evaluation type and your insurance. Most insured families
-            pay $0 to a small copay. Self-pay rates and payment plans are available —
-            call us and we'll walk you through the exact numbers for your situation.
-          </p>
-        </details>
-        <details class="group bg-white rounded-xl border border-stone-200 p-5 open:shadow-sm">
-          <summary class="cursor-pointer font-semibold text-stone-900 list-none flex justify-between items-center">
-            <span>Do you accept Step Up for Students?</span>
-            <span class="text-sky-700 group-open:rotate-45 transition">+</span>
-          </summary>
-          <p class="mt-3 text-stone-700">
-            Yes — we are an approved Step Up for Students provider. Scholarship-funded
-            evaluations are welcome.
-          </p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA / Contact -->
-  <section id="contact" class="px-6 py-20 sm:py-28 bg-gradient-to-br from-sky-700 to-sky-900 text-white">
+  <!-- Final CTA -->
+  <section class="px-6 py-20 sm:py-28 bg-gradient-to-br from-sky-700 to-sky-900 text-white">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
         Stop waiting. Start with a 15-minute call.
@@ -386,33 +258,52 @@
       <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
         <a href="tel:+18889856037"
            class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-sky-800 font-semibold shadow-sm hover:bg-sky-50 transition">
-          Book your evaluation
+          Call 1-888-985-6037
         </a>
-        <a href="mailto:info@sozo-llc.com"
+        <a href="/contact.html"
            class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-sky-800 text-white font-semibold border border-sky-500 hover:bg-sky-700 transition">
-          Email us
+          Contact us
         </a>
       </div>
-      <div class="mt-12 grid sm:grid-cols-3 gap-6 text-left sm:text-center text-sky-100">
-        <div>
-          <p class="text-xs uppercase tracking-widest text-sky-300">Toll-free</p>
-          <p class="mt-1 text-lg"><a class="hover:underline" href="tel:+18889856037">1-888-985-6037</a></p>
-        </div>
-        <div>
-          <p class="text-xs uppercase tracking-widest text-sky-300">Local</p>
-          <p class="mt-1 text-lg"><a class="hover:underline" href="tel:+13059856037">305-985-6037</a></p>
-        </div>
-        <div>
-          <p class="text-xs uppercase tracking-widest text-sky-300">Email</p>
-          <p class="mt-1 text-lg"><a class="hover:underline" href="mailto:info@sozo-llc.com">info@sozo-llc.com</a></p>
-        </div>
-      </div>
-      <p class="mt-10 text-sm text-sky-200">Serving all of Florida · Fax 305-902-2455</p>
     </div>
   </section>
 
-  <footer class="px-6 py-10 text-center text-sm text-stone-400 bg-stone-900">
-    <p>&copy; Sozo Behavioral Health Services. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 text-white font-semibold">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-sky-700 text-white font-bold">S</span>
+          <span>Sozo Behavioral Health</span>
+        </div>
+        <p class="mt-4 text-sm text-stone-400 leading-relaxed">
+          Comprehensive evaluations for children, teens, and young adults. Serving all of Florida.
+        </p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white uppercase tracking-widest">Pages</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          <li><a href="/services.html" class="hover:text-white">Evaluations</a></li>
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white uppercase tracking-widest">Contact</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="tel:+18889856037" class="hover:text-white">1-888-985-6037 (toll-free)</a></li>
+          <li><a href="tel:+13059856037" class="hover:text-white">305-985-6037 (local)</a></li>
+          <li><a href="mailto:info@sozo-llc.com" class="hover:text-white">info@sozo-llc.com</a></li>
+          <li class="text-stone-500">Fax 305-902-2455</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-stone-800">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-stone-500 text-center">
+        &copy; Sozo Behavioral Health Services. All rights reserved.
+      </div>
+    </div>
   </footer>
 
 </body>
