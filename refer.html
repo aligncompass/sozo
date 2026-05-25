@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refer a Patient — Sozo Behavioral Health Services</title>
+  <meta name="description" content="Refer a child, teen, or young adult for evaluation at Sozo Behavioral Health Services. For pediatricians, therapists, teachers, school counselors, and family members across Florida." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-stone-200 z-50">
+    <input type="checkbox" id="nav-toggle" class="peer sr-only" />
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-semibold text-stone-900 shrink-0">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-sky-700 text-white font-bold">S</span>
+        <span class="hidden sm:inline tracking-tight">Sozo Behavioral Health</span>
+        <span class="sm:hidden tracking-tight">Sozo</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="/" class="text-stone-700 hover:text-sky-700 transition">Home</a>
+        <a href="/services.html" class="text-stone-700 hover:text-sky-700 transition">Evaluations</a>
+        <a href="/about.html" class="text-stone-700 hover:text-sky-700 transition">About</a>
+        <a href="/contact.html" class="text-stone-700 hover:text-sky-700 transition">Contact</a>
+        <a href="/portal.html" class="text-stone-700 hover:text-sky-700 transition">Sign in</a>
+      </nav>
+      <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+        <a href="/book.html" class="inline-flex items-center px-3 sm:px-4 py-2 rounded-lg bg-sky-700 text-white text-sm font-semibold hover:bg-sky-800 transition">
+          Book now
+        </a>
+        <label for="nav-toggle" class="md:hidden cursor-pointer p-2 rounded-lg hover:bg-stone-100 text-stone-700" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+    <nav class="hidden peer-checked:flex md:!hidden flex-col px-4 pb-2 border-t border-stone-200 text-sm font-medium bg-white">
+      <a href="/" class="py-3 border-b border-stone-100 text-stone-700 hover:text-sky-700">Home</a>
+      <a href="/services.html" class="py-3 border-b border-stone-100 text-stone-700 hover:text-sky-700">Evaluations</a>
+      <a href="/about.html" class="py-3 border-b border-stone-100 text-stone-700 hover:text-sky-700">About</a>
+      <a href="/contact.html" class="py-3 border-b border-stone-100 text-stone-700 hover:text-sky-700">Contact</a>
+      <a href="/portal.html" class="py-3 text-stone-700 hover:text-sky-700">Sign in</a>
+    </nav>
+  </header>
+
+  <!-- Demo notice -->
+  <div class="bg-amber-50 border-b border-amber-200">
+    <div class="max-w-6xl mx-auto px-6 py-3 text-sm text-amber-900 text-center">
+      <strong>Referral preview.</strong> Submissions don't route to a real intake queue yet — to make a referral today, call
+      <a href="tel:+18889856037" class="font-semibold underline hover:no-underline">1-888-985-6037</a> or fax 305-902-2455.
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="px-6 py-14 sm:py-20 bg-gradient-to-br from-sky-50 via-stone-50 to-emerald-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm uppercase tracking-widest text-sky-700 font-semibold">Refer a patient</p>
+      <h1 class="mt-3 text-4xl sm:text-5xl font-semibold text-stone-900 tracking-tight">
+        For pediatricians, therapists, schools, and families.
+      </h1>
+      <p class="mt-5 text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+        If a child you care about needs an evaluation, we'll take it from here.
+        No waitlist. We'll keep you in the loop with the family's permission.
+      </p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="px-6 py-12 sm:py-16 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white p-6 border border-stone-200">
+          <div class="w-10 h-10 rounded-full bg-sky-700 text-white flex items-center justify-center font-semibold">1</div>
+          <h3 class="mt-4 text-lg font-semibold text-stone-900">Submit the form</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">A few minutes. You can attach existing reports or fax them in.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 border border-stone-200">
+          <div class="w-10 h-10 rounded-full bg-sky-700 text-white flex items-center justify-center font-semibold">2</div>
+          <h3 class="mt-4 text-lg font-semibold text-stone-900">We reach the family</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">Within one business day, with the right evaluation and insurance picture.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 border border-stone-200">
+          <div class="w-10 h-10 rounded-full bg-sky-700 text-white flex items-center justify-center font-semibold">3</div>
+          <h3 class="mt-4 text-lg font-semibold text-stone-900">You stay in the loop</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">With signed release, we share the report and recommendations back with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referral form -->
+  <form action="#referral-confirmation" method="get" class="px-6 py-12 sm:py-16 bg-stone-50">
+    <div class="max-w-3xl mx-auto rounded-2xl bg-white border border-stone-200 p-7 sm:p-10 shadow-sm space-y-10">
+
+      <!-- Referrer -->
+      <section>
+        <h2 class="text-2xl font-semibold text-stone-900 tracking-tight">About you (the referrer)</h2>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="ref-name" class="text-sm font-semibold text-stone-700">Your name</label>
+            <input id="ref-name" type="text" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="Dr. Lisa Chen" />
+          </div>
+          <div>
+            <label for="ref-role" class="text-sm font-semibold text-stone-700">Your role</label>
+            <select id="ref-role" class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900 bg-white">
+              <option>Pediatrician / primary care</option>
+              <option>Psychiatrist / psychologist</option>
+              <option>Therapist (OT / SLP / behavioral)</option>
+              <option>School counselor / teacher / IEP team</option>
+              <option>Family member or friend</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="ref-org" class="text-sm font-semibold text-stone-700">Organization (optional)</label>
+            <input id="ref-org" type="text" class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="Sunshine Pediatrics, Miami" />
+          </div>
+          <div>
+            <label for="ref-phone" class="text-sm font-semibold text-stone-700">Your phone</label>
+            <input id="ref-phone" type="tel" class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="(305) 555-0142" />
+          </div>
+          <div class="sm:col-span-2">
+            <label for="ref-email" class="text-sm font-semibold text-stone-700">Your email</label>
+            <input id="ref-email" type="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="lchen@sunshinepeds.com" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Patient -->
+      <section>
+        <h2 class="text-2xl font-semibold text-stone-900 tracking-tight">About the patient</h2>
+        <p class="mt-2 text-sm text-stone-600">Family contact below is what Sozo will use to reach out. Please confirm the family has consented to a referral.</p>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="pt-name" class="text-sm font-semibold text-stone-700">Child's name</label>
+            <input id="pt-name" type="text" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="Sofia Hernandez" />
+          </div>
+          <div>
+            <label for="pt-age" class="text-sm font-semibold text-stone-700">Age</label>
+            <input id="pt-age" type="number" min="2" max="25" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="9" />
+          </div>
+          <div>
+            <label for="parent-name-ref" class="text-sm font-semibold text-stone-700">Parent / guardian name</label>
+            <input id="parent-name-ref" type="text" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="Maria Hernandez" />
+          </div>
+          <div>
+            <label for="parent-phone-ref" class="text-sm font-semibold text-stone-700">Parent phone</label>
+            <input id="parent-phone-ref" type="tel" required class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="(305) 555-0143" />
+          </div>
+          <div class="sm:col-span-2">
+            <label for="parent-email-ref" class="text-sm font-semibold text-stone-700">Parent email</label>
+            <input id="parent-email-ref" type="email" class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="maria@example.com" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Reason -->
+      <section>
+        <h2 class="text-2xl font-semibold text-stone-900 tracking-tight">Reason for referral</h2>
+        <div class="mt-6 space-y-4">
+          <div>
+            <p class="text-sm font-semibold text-stone-700">Evaluation you're recommending (pick the closest fit)</p>
+            <div class="mt-2 flex flex-wrap gap-2 text-sm">
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="checkbox" name="rec" value="adhd" class="text-sky-700" /> ADHD
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="checkbox" name="rec" value="autism" class="text-sky-700" /> Autism
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="checkbox" name="rec" value="gifted" class="text-sky-700" /> Gifted / IQ
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="checkbox" name="rec" value="learning" class="text-sky-700" /> Learning / achievement
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="checkbox" name="rec" value="nutrition" class="text-emerald-700" /> Nutrition &amp; gut
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="checkbox" name="rec" value="not-sure" class="text-sky-700" /> Not sure
+              </label>
+            </div>
+          </div>
+          <div>
+            <label for="ref-context" class="text-sm font-semibold text-stone-700">What are you seeing?</label>
+            <textarea id="ref-context" rows="4" class="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 focus:outline-none text-stone-900" placeholder="Briefly describe symptoms, school flags, prior testing, anything we should know going in..."></textarea>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-stone-700">Urgency</p>
+            <div class="mt-2 flex flex-wrap gap-2 text-sm">
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="radio" name="urgency" value="routine" checked class="text-sky-700" /> Routine
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="radio" name="urgency" value="weeks" class="text-sky-700" /> Within a few weeks
+              </label>
+              <label class="flex items-center gap-2 px-3 py-2 rounded-lg border border-stone-200 cursor-pointer hover:border-sky-400">
+                <input type="radio" name="urgency" value="urgent" class="text-sky-700" /> Urgent
+              </label>
+            </div>
+          </div>
+          <label class="flex items-start gap-3 cursor-pointer text-sm text-stone-700">
+            <input type="checkbox" class="mt-1 text-sky-700" required />
+            <span>I confirm the family is aware of and consents to this referral.</span>
+          </label>
+        </div>
+      </section>
+
+      <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+        <p class="text-sm text-stone-500">For HIPAA-protected records, fax 305-902-2455 or call to arrange secure transfer.</p>
+        <button type="submit" class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-sky-700 text-white font-semibold shadow-sm hover:bg-sky-800 transition w-full sm:w-auto">
+          Send referral →
+        </button>
+      </div>
+
+      <section id="referral-confirmation" class="rounded-2xl bg-emerald-50 border border-emerald-200 p-8 text-center">
+        <svg class="w-12 h-12 mx-auto text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        <h3 class="mt-4 text-2xl font-semibold text-stone-900 tracking-tight">After you submit</h3>
+        <p class="mt-3 text-stone-700 leading-relaxed max-w-2xl mx-auto">
+          A Sozo team member will reach out to the family within one business day.
+          With the family's signed release, we'll send a copy of the evaluation report
+          back to you when it's complete.
+        </p>
+      </section>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 text-white font-semibold">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-sky-700 text-white font-bold">S</span>
+          <span>Sozo Behavioral Health</span>
+        </div>
+        <p class="mt-4 text-sm text-stone-400 leading-relaxed">
+          Comprehensive evaluations for children, teens, and young adults. Serving all of Florida.
+        </p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white uppercase tracking-widest">Pages</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          <li><a href="/services.html" class="hover:text-white">Evaluations</a></li>
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+          <li><a href="/book.html" class="hover:text-white">Book appointment</a></li>
+          <li><a href="/portal.html" class="hover:text-white">Patient portal</a></li>
+          <li><a href="/refer.html" class="hover:text-white">Refer a patient</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white uppercase tracking-widest">Contact</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="tel:+18889856037" class="hover:text-white">1-888-985-6037 (toll-free)</a></li>
+          <li><a href="tel:+13059856037" class="hover:text-white">305-985-6037 (local)</a></li>
+          <li><a href="mailto:info@sozo-llc.com" class="hover:text-white">info@sozo-llc.com</a></li>
+          <li class="text-stone-500">Fax 305-902-2455</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-stone-800">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-stone-500 text-center">
+        &copy; Sozo Behavioral Health Services. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
